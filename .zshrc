@@ -18,7 +18,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often to auto-update? (in days)
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=1
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -54,7 +54,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/home/lvicentesanchez/.cabal/bin:/home/lvicentesanchez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+# export PATH=":/home/lvicentesanchez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -72,3 +73,7 @@ export PATH="/home/lvicentesanchez/.cabal/bin:/home/lvicentesanchez/bin:/usr/loc
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+if [ -f ~/.zprofile ]; then
+    source ~/.zprofile
+fi
