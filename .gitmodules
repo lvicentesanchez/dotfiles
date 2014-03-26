@@ -13,3 +13,9 @@
 [submodule ".vim/bundle/vim-git"]
 	path = .vim/bundle/vim-git
 	url = git@github.com:tpope/vim-git.git
+[submodule ".vim/bundle/vim-scala"]
+	path = .vim/bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
+[submodule ".vim/bundle/vim-sbt"]
+	path = .vim/bundle/vim-sbt
+	url = git@github.com:derekwyatt/vim-sbt.git
