@@ -7,3 +7,8 @@ set background=dark
 colorscheme solarized
 
 set backspace=2
+
+" Enabling mouse scrolling inside vim
+"	
+set mouse=a
+set ttymouse=xterm
