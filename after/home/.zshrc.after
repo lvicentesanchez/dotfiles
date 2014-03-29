@@ -1,0 +1,3 @@
+DEFAULT_USER="lvicentesanchez"
+
+eval `dircolors ~/.dir_colors/dircolors.256dark`
