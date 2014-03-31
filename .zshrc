@@ -45,11 +45,6 @@ DISABLE_AUTO_UPDATE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Custom definitions
-if [ -f ~/.zshrc.after ]; then
-    source ~/.zshrc.after
-fi
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -58,6 +53,11 @@ plugins=(git command-not-found colorize)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Custom definitions
+if [ -f ~/.zshrc.after ]; then
+    source ~/.zshrc.after
+fi
 
 # export PATH=":/home/lvicentesanchez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
