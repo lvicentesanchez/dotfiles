@@ -12,3 +12,9 @@ set backspace=2
 "	
 set mouse=a
 set ttymouse=xterm
+
+" Enabling powerline
+"
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set laststatus=2
+set t_Co=256
