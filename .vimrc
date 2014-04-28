@@ -14,8 +14,11 @@ set laststatus=2
 set t_Co=256 
 let g:airline_powerline_fonts = 1
 
-" Enabling mouse scrolling inside vim
+" Enabling mouse inside vim
 "	
 set mouse=a
-set ttymouse=xterm
+set ttymouse=xterm2
 
+" Faster scrolling
+"
+set ttyfast
