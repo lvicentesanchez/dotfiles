@@ -8,13 +8,14 @@ colorscheme solarized
 
 set backspace=2
 
+" Airline configuration
+"
+set laststatus=2
+set t_Co=256 
+let g:airline_powerline_fonts = 1
+
 " Enabling mouse scrolling inside vim
 "	
 set mouse=a
 set ttymouse=xterm
 
-" Enabling powerline
-"
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-set laststatus=2
-set t_Co=256
