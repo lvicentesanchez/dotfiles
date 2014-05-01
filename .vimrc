@@ -14,6 +14,10 @@ set laststatus=2
 set t_Co=256 
 let g:airline_powerline_fonts = 1
 
+" Enabling line numbers
+"
+set number
+
 " Enabling mouse inside vim
 "	
 set mouse=a
