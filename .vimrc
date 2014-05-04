@@ -34,3 +34,12 @@ set ttymouse=xterm2
 " Faster scrolling
 "
 set ttyfast
+
+" Unite
+"
+nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
+nnoremap <leader>f :<C-u>Unite file<CR>
+nnoremap <leader>b :<C-u>Unite buffer<CR>
+
+let g:unite_source_rec_async_command = 'ag --nocolor --nogroup --ignore ".git" --hidden -g ""'
+
