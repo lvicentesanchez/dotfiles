@@ -35,6 +35,10 @@ set ttymouse=xterm2
 "
 set ttyfast
 
+" neco-ghc
+"
+let g:necoghc_enable_detailed_browse = 1
+
 " Unite
 "
 nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
