@@ -8,6 +8,7 @@ ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s ~/.dotfiles/after/home/.zprofile.after ~/.zprofile.after
 ln -s ~/.dotfiles/.oh-my-zsh ~/.oh-my-zsh
 
+ln -s ~/.dotfiles/.tmux ~/.tmux
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/.tmux.binds.conf ~/.tmux.binds.conf
 
