@@ -39,6 +39,11 @@ set ttyfast
 "
 let g:necoghc_enable_detailed_browse = 1
 
+" neocomplete
+"
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+
 " Unite
 "
 nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
