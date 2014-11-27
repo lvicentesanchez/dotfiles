@@ -35,14 +35,6 @@ set ttymouse=xterm2
 "
 set ttyfast
 
-" Haskell
-"
-au FileType haskell set omnifunc=necoghc#omnifunc
-
-" neco-ghc
-"
-let g:necoghc_enable_detailed_browse = 1
-
 " neocomplete
 "
 let g:neocomplete#enable_at_startup = 1
