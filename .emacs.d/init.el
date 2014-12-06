@@ -1,6 +1,5 @@
 ;; Disable menubar/toolbar
 (menu-bar-mode -1)
-(tool-bar-mode -1)
 
 ;; Additional repositories for packages
 (require 'package)
