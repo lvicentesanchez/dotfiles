@@ -12,3 +12,8 @@
 
 ;; Theme: solarized dark
 (load-theme 'solarized-dark t)
+
+;; linum
+
+(setq linum-format "%3d ")
+(global-linum-mode 1)

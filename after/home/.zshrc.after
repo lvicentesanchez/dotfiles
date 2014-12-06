@@ -1,6 +1,6 @@
 DEFAULT_USER="luisvicente"
 
-eval `dircolors ~/.dir_colors/dircolors.256dark`
+eval `dircolors ~/.dir_colors/dircolors`
 
 #alias emacs="TERM=xterm /opt/emacs/bin/emacs -nw"
 
