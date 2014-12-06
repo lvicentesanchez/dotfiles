@@ -8,5 +8,8 @@
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+;; Evil mode
+(evil-mode 1)
+
 ;; Theme: solarized dark
 (load-theme 'solarized-dark t)
