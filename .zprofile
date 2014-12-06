@@ -1,4 +1,4 @@
-export TERM='xterm-256color'
+export TERM='xterm'
 
 if [ -f ~/.zprofile.after ]; then
   source ~/.zprofile.after

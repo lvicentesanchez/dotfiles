@@ -2,7 +2,7 @@ DEFAULT_USER="luisvicente"
 
 eval `dircolors ~/.dir_colors/dircolors.256dark`
 
-alias emacs="TERM=xterm /opt/emacs/bin/emacs -nw"
+#alias emacs="TERM=xterm /opt/emacs/bin/emacs -nw"
 
 # OPAM configuration
 . /home/luisvicente/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
