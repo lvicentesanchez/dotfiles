@@ -3,7 +3,7 @@
 ;; Copyright (C) 2012-2014 Magnar Sveen
 
 ;; Author: Magnar Sveen <magnars@gmail.com>
-;; Version: 20141206.845
+;; Version: 20141207.1052
 ;; X-Original-Version: 2.10.0
 ;; Keywords: lists
 
@@ -1127,8 +1127,8 @@ sorts it in descending order."
     `(pop ,source))
    (t
     `(progn
-       (setq ,s (nthcdr ,skip-cdr ,s))
-       (pop ,s)))))
+       (setq ,source (nthcdr ,skip-cdr ,source))
+       (pop ,source)))))
 
 (defun dash--match-cons-get-car (skip-cdr source)
   "Helper function generating idiomatic code to get nth car."
@@ -1497,8 +1497,8 @@ See `-let' for the description of destructuring mechanism."
 VARS and do THEN, otherwise do ELSE. VARS-VALS should be a list
 of (VAR VAL) pairs.
 
-Note: binding is done according to `-let'."
-  (declare (debug ((&rest (symbolp form)) form body))
+Note: binding is done according to `-let*'."
+  (declare (debug ((&rest (sexp form)) form body))
            (indent 2))
   (->> vars-vals
     (-mapcat (-lambda ((pat src)) (dash--match pat src)))
@@ -1513,7 +1513,7 @@ Note: binding is done according to `-let'."
 otherwise do ELSE. VAR-VAL should be a (VAR VAL) pair.
 
 Note: binding is done according to `-let'."
-  (declare (debug ((symbolp form) form body))
+  (declare (debug ((sexp form) form body))
            (indent 2))
   `(-if-let* (,var-val) ,then ,@else))
 
@@ -1529,8 +1529,8 @@ otherwise do ELSE."
 VARS and execute body. VARS-VALS should be a list of (VAR VAL)
 pairs.
 
-Note: binding is done according to `-let'."
-  (declare (debug ((&rest (symbolp form)) body))
+Note: binding is done according to `-let*'."
+  (declare (debug ((&rest (sexp form)) body))
            (indent 1))
   `(-if-let* ,vars-vals (progn ,@body)))
 
@@ -1539,7 +1539,7 @@ Note: binding is done according to `-let'."
 VAR-VAL should be a (VAR VAL) pair.
 
 Note: binding is done according to `-let'."
-  (declare (debug ((symbolp form) body))
+  (declare (debug ((sexp form) body))
            (indent 1))
   `(-if-let ,var-val (progn ,@body)))
 
