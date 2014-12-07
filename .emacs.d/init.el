@@ -7,6 +7,9 @@
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+;; Autocomplete
+(ac-config-default)
+
 ;; Evil mode
 (evil-mode 1)
 
