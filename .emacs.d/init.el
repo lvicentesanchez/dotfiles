@@ -10,6 +10,9 @@
 ;; Evil mode
 (evil-mode 1)
 
+;; Power line
+(powerline-vim-theme)
+
 ;; Theme: solarized dark
 (load-theme 'solarized-dark t)
 
