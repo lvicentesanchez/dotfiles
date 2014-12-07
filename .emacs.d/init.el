@@ -10,16 +10,18 @@
 ;; Autocomplete
 (ac-config-default)
 
+;; Ensime
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
 ;; Evil mode
 (evil-mode 1)
+
+;; linum
+(setq linum-format "%3d ")
+(global-linum-mode 1)
 
 ;; Power line
 (powerline-vim-theme)
 
 ;; Theme: solarized dark
 (load-theme 'solarized-dark t)
-
-;; linum
-
-(setq linum-format "%3d ")
-(global-linum-mode 1)
