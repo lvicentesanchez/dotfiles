@@ -1,0 +1,41 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/luisvicente/development/sources/" . "elixir/")
+ ("/home/luisvicente/development/" . "sources/")
+ ("/home/luisvicente/development/repositories/" . "stash/")
+ ("/home/luisvicente/" . "development/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/luisvicente/development/sources/elixir/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "math.exs"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/luisvicente/development/sources/elixir/" (21619 41645 166822 976000) "../" "Elixir.Math.beam" "./" "math.exs")
+
+ ("/home/luisvicente/development/sources/" (21632 59728 234353 328000) "../" "haskell/" "./" "elixir/" "applications/" "ml/" "rust/")
+
+ ("/home/luisvicente/development/repositories/stash/" (21627 33602 800256 62000) "../" "./" "rosetta/" "rosetta-streams/")
+
+ ("/home/luisvicente/development/repositories/" (21635 26051 576498 208000) "../" "./" "github/" "gnu/" "stash/")
+
+ ("/home/luisvicente/development/" (21622 25904 545537 386000) "libraries/" "../" "tools/" "sources/" "./" "repositories/")
+
+ ("/home/luisvicente/" (21636 42395 106239 295000) ".zprofile" "sources.list.d/" "Music/" ".gconf/" ".emacs.d/" "bin/" "development/" ".ocamlinit" ".cache/" "Videos/" ".sbt/" ".gnupg/" ".vim/" "../" ".tmux.binds.conf" ".gnome/" ".vimrc" ".bash_history" "Templates/" ".tmux.conf" ".profile" ".zsh_history" "Downloads/" ".bash_logout" ".Trash/" ".viminfo" "Public/" "Pictures/" ".local/" "./" ".ivy2/" "google-chrome.desktop" "Documents/" ".ghc/" ".ssh/" ".smartgit/" ".subversion/" "Desktop/" ".zprofile.after" ".dotfiles/" ".zcompdump" ".opam/" ".mozilla/" ".fonts/" ".zshrc" ".ghci" ".java/" ".dir_colors/" ".cabal/" ".ICEauthority" ".zcompdump-XPS-L322X-5.0.5" ".config/" ".tmux/" ".IdeaIC14/" ".antigen/" ".zshrc.after" ".gitconfig" ".erc/" ".pki/" ".bashrc" ".atom/" ".fonts.conf.d/")
+
+ ("/home/luisvicente/.dotfiles/" (21636 40120 914626 513000) ".zprofile" ".gitignore" ".emacs.d/" "update-work.sh" "antigen/" ".vim/" "../" ".tmux.binds.conf" ".vimrc" "update.sh" ".tmux.conf" ".gitmodules" "./" ".fonts/" ".zshrc" ".dir_colors/" "colors/" ".tmux/" "README.md" "after/" ".fonts.conf.d/" ".git/" ".ctags")
+
+ ("/home/luisvicente/.dotfiles/.emacs.d/" (21636 42393 446186 799000) ".gitignore" "elpa/" "init.el" "../" "ac-comphist.dat" "./" "projectile-bookmarks.eld" "auto-save-list/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

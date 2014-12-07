@@ -1,0 +1,1 @@
+("~/.dotfiles/" "~/development/repositories/stash/rosetta-streams/")
