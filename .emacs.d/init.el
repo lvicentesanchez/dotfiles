@@ -8,33 +8,44 @@
 (package-initialize)
 
 ;; Autocomplete
+(require 'auto-complete-config)
 (ac-config-default)
 
 ;; Ensime
+(require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
-;; Evil mode
+;; Evil modei
+(require 'evil)
 (evil-mode 1)
 
 ;; flx-ido
+(require 'flx-ido)
 (ido-mode 1)
 (ido-everywhere 1)
 (flx-ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
 
-;; linum
+;; Linum
+(require 'linum)
 (setq linum-format "%3d ")
 (global-linum-mode 1)
 
 ;; Power line
+(require 'powerline)
 (powerline-vim-theme)
 
 ;; Projectile
+(require 'projectile)
 (projectile-global-mode)
 
 ;; Theme: solarized dark
-(load-theme 'solarized-dark t)
+;;(load-theme 'solarized-dark t)
+(require 'color-theme)
+(require 'color-theme-solarized)
+(color-theme-initialize)
+(color-theme-solarized-dark)
 
 ;; Increasing gc threshold
-(setq gc-cons-threshold 20000000)
+(setq gc-cons-threshold 50000000)
