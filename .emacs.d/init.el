@@ -1,53 +1,12 @@
-;; Disable menubar/toolbar
-(menu-bar-mode -1)
+(defvar emacs-dir (file-name-directory load-file-name)
+  "The root dir of the emacs.d folder.")
 
-;; Additional repositories for packages
-(require 'package)
-(add-to-list 'package-archives
-	     '("gnu" . "http://elpa.gnu.org/packages/"))
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/"))
-(package-initialize)
+(defvar config-emacs-dir (expand-file-name "config" emacs-dir)
+  "Config files for all packages.")
 
-;; Autocomplete
-(require 'auto-complete-config)
-(ac-config-default)
+(when (file-exists-p config-emacs-dir)
+  (message "Loading personal configuration files in %s..." config-emacs-dir)
+    (mapc 'load (directory-files config-emacs-dir 't "^[^#].*el$")))
 
-;; Ensime
-(require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
-;; Evil modei
-(require 'evil)
-(evil-mode 1)
-
-;; flx-ido
-(require 'flx-ido)
-(ido-mode 1)
-(ido-everywhere 1)
-(flx-ido-mode 1)
-(setq ido-enable-flex-matching t)
-(setq ido-use-faces nil)
-
-;; Linum
-(require 'linum)
-(setq linum-format "%3d ")
-(global-linum-mode 1)
-
-;; Power line
-(require 'powerline)
-(powerline-center-evil-theme)
-
-;; Projectile
-(require 'projectile)
-(projectile-global-mode)
-
-;; Theme: solarized dark
-;;(load-theme 'solarized-dark t)
-(require 'color-theme)
-(require 'color-theme-solarized)
-(color-theme-initialize)
-(color-theme-solarized-dark)
-
-;; Increasing gc threshold
-(setq gc-cons-threshold 50000000)
+(custom-set-variables
+ '(inhibit-startup-screen t))
