@@ -5,7 +5,7 @@
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/projectile
 ;; Keywords: project, convenience
-;; Version: 20141207.1340
+;; Version: 20141207.2354
 ;; X-Original-Version: 0.11.0
 ;; Package-Requires: ((s "1.6.0") (f "0.17.1") (dash "1.5.0") (pkg-info "0.4"))
 
@@ -2145,10 +2145,11 @@ fallback to the original function."
            (and (projectile-project-p)
                 (let ((root (projectile-project-root))
                       (dirs (cons "" (projectile-current-project-dirs))))
-                  (->> dirs
-                    (--map (f-join root it filename))
-                    (-filter #'file-exists-p)
-                    (-first-item))))
+                  (-when-let (full-filename (->> dirs
+                                              (--map (f-join root it filename))
+                                              (-filter #'file-exists-p)
+                                              (-first-item)))
+                    (find-file-noselect full-filename))))
            ;; Fall back to the old function `compilation-find-file'
            ad-do-it))))
 
