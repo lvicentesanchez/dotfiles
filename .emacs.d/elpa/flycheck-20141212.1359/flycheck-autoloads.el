@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "flycheck" "flycheck.el" (21642 6447 212232
-;;;;;;  443000))
+;;;### (autoloads nil "flycheck" "flycheck.el" (21643 37477 640604
+;;;;;;  310000))
 ;;; Generated autoloads from flycheck.el
 
 (autoload 'flycheck-info "flycheck" "\
@@ -191,11 +191,10 @@ argument to `flycheck-define-checker'.
 (autoload 'flycheck-def-option-var "flycheck" "\
 Define SYMBOL as option variable with INIT-VALUE for CHECKER.
 
-SYMBOL is declared as customizable variable, buffer-local
-variable using `defcustom', to provide an option for the given
-syntax CHECKER.  INIT-VALUE is the initial value of the variable,
-and DOCSTRING is its docstring.  CUSTOM-ARGS are forwarded to
-`defcustom'.
+SYMBOL is declared as customizable, buffer-local variable using
+`defcustom', to provide an option for the given syntax CHECKER.
+INIT-VALUE is the initial value of the variable, and DOCSTRING is
+its docstring.  CUSTOM-ARGS are forwarded to `defcustom'.
 
 Use this together with the `option', `option-list' and
 `option-flag' forms in the `:command' argument to
@@ -209,8 +208,8 @@ Use this together with the `option', `option-list' and
 
 ;;;***
 
-;;;### (autoloads nil nil ("flycheck-ert.el" "flycheck-pkg.el") (21642
-;;;;;;  6447 233846 40000))
+;;;### (autoloads nil nil ("flycheck-ert.el" "flycheck-pkg.el") (21643
+;;;;;;  37477 659613 574000))
 
 ;;;***
 

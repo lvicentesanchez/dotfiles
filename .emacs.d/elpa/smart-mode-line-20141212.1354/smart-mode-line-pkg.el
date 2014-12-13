@@ -1,4 +1,4 @@
-(define-package "smart-mode-line" "20141211.751" "A color coded smart mode-line."
+(define-package "smart-mode-line" "20141212.1354" "A color coded smart mode-line."
   '((emacs "24.3")
     (dash "2.2.0")
     (rich-minority "0.1"))

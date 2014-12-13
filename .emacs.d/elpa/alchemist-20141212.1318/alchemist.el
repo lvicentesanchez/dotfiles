@@ -5,7 +5,7 @@
 ;; Author: Samuel Tonini <tonini.samuel@gmail.com>
 
 ;; URL: http://www.github.com/tonini/alchemist.el
-;; Version: 0.10.0-cvs
+;; Version: 0.11.0-csv
 ;; Package-Requires: ((emacs "24"))
 ;; Keywords: languages, mix, elixir, elixirc, hex
 
@@ -47,6 +47,7 @@
 (require 'alchemist-help)
 (require 'alchemist-complete)
 (require 'alchemist-message)
+(require 'alchemist-iex)
 
 (eval-after-load 'company
   '(progn
@@ -56,7 +57,7 @@
   "Hook which enables `alchemist-mode'"
   (alchemist-mode 1))
 
-(defvar alchemist--version "0.10.0-cvs")
+(defvar alchemist--version "0.11.0-csv")
 
 ;;;###autoload
 (defun alchemist-version (&optional show-version)
@@ -81,6 +82,12 @@
     (define-key map (kbd "C-c a h m") 'alchemist-help-search-marked-region)
     (define-key map (kbd "C-c a p f") 'alchemist-project-find-test)
     (define-key map (kbd "C-c a p t") 'alchemist-project-open-tests-for-current-file)
+    (define-key map (kbd "C-c a i i") 'alchemist-iex-run)
+    (define-key map (kbd "C-c a i p") 'alchemist-iex-project-run)
+    (define-key map (kbd "C-c a i l") 'alchemist-iex-send-current-line)
+    (define-key map (kbd "C-c a i c") 'alchemist-iex-send-current-line-and-go)
+    (define-key map (kbd "C-c a i r") 'alchemist-iex-send-region)
+    (define-key map (kbd "C-c a i m") 'alchemist-iex-send-region-and-go)
     map)
   "The keymap used when `alchemist-mode' is active.")
 
