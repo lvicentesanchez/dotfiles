@@ -7,7 +7,8 @@
  '(haskell-process-suggest-remove-import-lines t)
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
- '(haskell-process-type 'cabal-repl))
+ '(haskell-process-type 'cabal-repl)
+ '(haskell-stylish-on-save t))
 
 ;; Haskell-mode bindings
 (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload)
