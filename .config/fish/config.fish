@@ -14,4 +14,7 @@ set fish_theme fox
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
+alias ls="ls --color=auto"
 alias l="ls -la"
+
+. $HOME/.config/fish/config.fish.after
