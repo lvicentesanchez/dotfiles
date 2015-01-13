@@ -72,4 +72,4 @@
 	url = git@github.com:zsh-users/antigen.git
 [submodule ".oh-my-fish"]
 	path = .oh-my-fish
-	url = git@github.com:lvicentesanchez/oh-my-fish.git
+	url = git@github.com:bpinto/oh-my-fish.git
