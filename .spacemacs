@@ -12,17 +12,19 @@
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     auto-completion
+     better-defaults
+     haskell
+     purescript
+     syntax-checking
      ;; --------------------------------------------------------
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
-     ;; auto-completion
-     ;; better-defaults
      ;; (git :variables
      ;;      git-gutter-use-fringe t)
      ;; markdown
      ;; org
-     ;; syntax-checking
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -132,7 +134,6 @@ before layers configuration."
    ;; Not used for now.
    dotspacemacs-default-package-repository nil
    )
-  ;; User initialization goes here
   )
 
 (defun dotspacemacs/config ()
