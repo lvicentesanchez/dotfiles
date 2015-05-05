@@ -14,6 +14,8 @@ set noshelltemp
 
 set shortmess+=I
 
+set shell=fish
+
 " Airline configuration
 "
 set laststatus=2
