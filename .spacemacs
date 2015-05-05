@@ -16,6 +16,7 @@
      better-defaults
      haskell
      purescript
+     scala
      syntax-checking
      ;; --------------------------------------------------------
      ;; Example of useful layers you may want to use right away
