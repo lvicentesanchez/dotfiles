@@ -10,6 +10,8 @@ colorscheme solarized
 
 set backspace=2
 
+set noshelltemp
+
 set shortmess+=I
 
 " Airline configuration
