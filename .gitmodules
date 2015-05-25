@@ -73,6 +73,6 @@
 [submodule ".oh-my-fish"]
 	path = .oh-my-fish
 	url = git@github.com:bpinto/oh-my-fish.git
-[submodule ".spacemacs.d"]
-	path = .spacemacs.d
-	url = http://github.com/syl20bnr/spacemacs
+[submodule "spacemacs/private/purescript"]
+	path = spacemacs/private/purescript
+	url = git@github.com:kofno/purescript-spacemacs.git
