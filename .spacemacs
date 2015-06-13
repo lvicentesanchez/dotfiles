@@ -15,7 +15,7 @@
      auto-completion
      better-defaults
      emacs-lisp
-     erlang-elixir
+     elixir
      haskell
      markdown
      org
