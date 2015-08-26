@@ -1,17 +1,8 @@
-# Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
+set -g OMF_PATH   $HOME/.local/share/omf
+set -g OMF_CUSTOM $HOME/.dotfiles
+set -g OMF_CONFIG $HOME/.config/omf
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
-# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
-# Example format: set fish_plugins autojump bundler
-
-# Path to your custom folder (default path is $FISH/custom)
-#set fish_custom $HOME/dotfiles/oh-my-fish
-
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
-
-Theme fox
+source $OMF_PATH/init.fish
 
 alias ls="ls --color=auto"
 alias l="ls -la"
