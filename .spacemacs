@@ -15,7 +15,7 @@
      auto-completion
      better-defaults
      emacs-lisp
-     haskell
+     (haskell :variables haskell-enable-ghci-ng-support t)
      markdown
      org
      purescript
@@ -147,6 +147,7 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+   (add-to-list 'exec-path "~/.local/bin/")
   )
 
 (defun dotspacemacs/config ()
