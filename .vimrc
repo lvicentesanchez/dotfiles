@@ -33,7 +33,9 @@ set number
 " Enabling mouse inside vim
 "	
 set mouse=a
-set ttymouse=xterm2
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 
 " Faster scrolling
 "
