@@ -4,7 +4,4 @@ set -g OMF_CONFIG $HOME/.config/omf
 
 source $OMF_PATH/init.fish
 
-alias ls="ls --color=auto"
-alias l="ls -la"
-
 . $HOME/.config/fish/config.fish.after
