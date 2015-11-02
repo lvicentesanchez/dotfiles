@@ -1,0 +1,17 @@
+# dircolors
+
+alias dircolors gdircolors
+
+if not set -q LS_COLORS
+    if type -t dircolors >/dev/null
+        eval (dircolors -c "$HOME/.dir_colors/dircolors.256dark" | sed 's/>&\/dev\/null$//')
+    end
+end
+
+# ls alias
+
+alias l  "gls --color -la"
+alias ls "gls --color"
+
+set -gx PATH ~/bin ~/dse/bin $PATH
+
