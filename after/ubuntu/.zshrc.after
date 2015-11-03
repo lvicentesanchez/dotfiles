@@ -1,6 +1,0 @@
-DEFAULT_USER="luisvicente"
-
-eval `dircolors ~/.dir_colors/dircolors`
-
-# OPAM configuration
-. /home/luisvicente/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
