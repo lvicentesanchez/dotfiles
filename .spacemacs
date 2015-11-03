@@ -148,6 +148,9 @@ before layers configuration."
    )
   ;; User initialization goes here
    (add-to-list 'exec-path "~/.local/bin/")
+  ;; workaround for helm+tramp issue https://github.com/emacs-helm/helm/issues/1000#issuecomment-119487649
+   (setq tramp-ssh-controlmaster-options
+         "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
   )
 
 (defun dotspacemacs/config ()
