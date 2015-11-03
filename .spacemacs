@@ -18,7 +18,6 @@
      (haskell :variables haskell-enable-ghci-ng-support t)
      markdown
      org
-     ocaml
      purescript
      scala
      shell
