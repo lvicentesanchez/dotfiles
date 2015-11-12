@@ -5,5 +5,5 @@ eval (dircolors -c $HOME/.dir_colors/dircolors)
 
 set -gx PATH ~/.local/bin $PATH
 
-# OPAM configuration
-. /home/luisvicente/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
+eval (opam config env)
+
