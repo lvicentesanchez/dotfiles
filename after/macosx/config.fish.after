@@ -13,5 +13,8 @@ end
 alias l  "gls --color -la"
 alias ls "gls --color"
 
-set -gx PATH ~/bin ~/dse/bin $PATH
+set -gx PATH ~/.local/bin ~/bin ~/dse/bin $PATH
+
+# OPAM configuration
+. /home/luisvicente/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
 
