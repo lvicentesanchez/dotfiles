@@ -15,6 +15,5 @@ alias ls "gls --color"
 
 set -gx PATH ~/.local/bin ~/bin ~/dse/bin $PATH
 
-# OPAM configuration
-. /home/luisvicente/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
+eval (opam config env)
 
