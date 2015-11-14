@@ -8,7 +8,6 @@ let () =
 #camlp4o
 #thread
 #require "async"
-#require "async_extended"
 #require "bin_prot.syntax"
 #require "comparelib.syntax"
 #require "core"
