@@ -15,6 +15,7 @@
      auto-completion
      better-defaults
      emacs-lisp
+     erlang
      (haskell :variables haskell-enable-ghci-ng-support t)
      markdown
      org
