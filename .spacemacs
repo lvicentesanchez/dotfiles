@@ -16,8 +16,10 @@
      better-defaults
      emacs-lisp
      erlang
+     fsharp
      (haskell :variables haskell-enable-ghci-ng-support t)
      markdown
+     ocaml
      org
      purescript
      scala
