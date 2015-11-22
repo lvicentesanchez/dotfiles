@@ -14,7 +14,7 @@ set noshelltemp
 
 set shortmess+=I
 
-set shell=fish
+set shell=bash
 
 " Airline configuration
 "
