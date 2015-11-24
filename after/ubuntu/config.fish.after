@@ -9,3 +9,6 @@ set -gx INFOPATH ~/.linuxbrew/share/info $INFOPATH
 
 eval (opam config env)
 
+fortune | cowsay -f (ls /usr/share/cowsay/cows/ | shuf -n 1)
+echo
+
