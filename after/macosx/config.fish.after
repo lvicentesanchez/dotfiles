@@ -17,3 +17,6 @@ set -gx PATH ~/.local/bin ~/bin ~/dse/bin $PATH
 
 eval (opam config env)
 
+fortune | cowsay
+echo
+
