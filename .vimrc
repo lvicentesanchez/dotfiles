@@ -19,7 +19,7 @@ set shell=bash
 " Airline configuration
 "
 set laststatus=2
-set t_Co=256 
+set t_Co=256
 let g:airline_powerline_fonts = 1
 
 " Ctags
@@ -31,7 +31,7 @@ set tags=tags;/
 set number
 
 " Enabling mouse inside vim
-"	
+"
 set mouse=a
 if !has('nvim')
   set ttymouse=xterm2
@@ -41,14 +41,23 @@ endif
 "
 set ttyfast
 
+" deoplete.nvim
+"
+let g:deoplete#enable_at_startup = 0
+
 " neocomplete
 "
 let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#enable_at_startup = 0
+let g:neocomplete#enable_smart_case = 0
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 let g:neocomplete#enable_auto_select = 0
+
+" ocaml
+"
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " Unite
 "
@@ -57,4 +66,3 @@ nnoremap <leader>f :<C-u>Unite file<CR>
 nnoremap <leader>b :<C-u>Unite buffer<CR>
 
 let g:unite_source_rec_async_command = 'ag --nocolor --nogroup --ignore ".git" --hidden -g ""'
-
