@@ -53,3 +53,4 @@ nnoremap <leader>f :<C-u>Unite file<CR>
 nnoremap <leader>b :<C-u>Unite buffer<CR>
 
 let g:unite_source_rec_async_command = 'ag --nocolor --nogroup --ignore ".git" --hidden -g ""'
+
