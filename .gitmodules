@@ -64,9 +64,6 @@
 [submodule ".vim/bundle/vim-elixir"]
 	path = .vim/bundle/vim-elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
-[submodule "spacemacs/private/purescript"]
-	path = spacemacs/private/purescript
-	url = git@github.com:kofno/purescript-spacemacs.git
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = git@github.com:syl20bnr/spacemacs.git
