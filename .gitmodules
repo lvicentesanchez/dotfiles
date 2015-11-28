@@ -64,9 +64,6 @@
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = git@github.com:syl20bnr/spacemacs.git
-[submodule ".vim/bundle/deoplete.nvim"]
-	path = .vim/bundle/deoplete.nvim
-	url = git@github.com:Shougo/deoplete.nvim.git
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
