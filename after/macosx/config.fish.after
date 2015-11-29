@@ -13,6 +13,7 @@ end
 alias l  "gls --color -la"
 alias ls "gls --color"
 
+set -gx HOSTNAME (hostname)
 set -gx PATH ~/.local/bin ~/bin ~/dse/bin $PATH
 
 eval (opam config env)
