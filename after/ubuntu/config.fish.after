@@ -3,7 +3,7 @@ alias l="ls -la"
 
 eval (dircolors -c $HOME/.dir_colors/dircolors)
 
-set -gx PATH ~/.linuxbrew/bin ~/.local/bin $PATH
+set -gx PATH ~/.linuxbrew/bin ~/.local/bin ~/development/tools/swift/2.2/usr/bin $PATH
 set -gx MANPATH ~/.linuxbrew/share/man $MANPATH
 set -gx INFOPATH ~/.linuxbrew/share/info $INFOPATH
 
