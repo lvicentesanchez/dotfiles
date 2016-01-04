@@ -22,6 +22,7 @@
      ocaml
      org
      purescript
+     rust
      scala
      shell
      syntax-checking
