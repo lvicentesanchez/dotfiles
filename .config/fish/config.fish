@@ -1,7 +1,5 @@
-set -g OMF_PATH   $HOME/.local/share/omf
-set -g OMF_CUSTOM $HOME/.dotfiles
-set -g OMF_CONFIG $HOME/.config/omf
-
-source $OMF_PATH/init.fish
+set -g fisher_home ~/.local/share/fisherman
+set -g fisher_config ~/.config/fisherman
+source $fisher_home/config.fish
 
 . $HOME/.config/fish/config.fish.after
